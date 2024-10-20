@@ -1,7 +1,7 @@
 # geysiane-ap1_est-gio
 
 Sistema de Agendamento de Laboratórios
-Este projeto é uma aplicação web que permite a professores agendar laboratórios para suas atividades, gerenciar reservas e consultar a disponibilidade de laboratórios.
+Este projeto é uma aplicação web que permite professores agendarem laboratórios para suas atividades, gerenciar reservas e consultar a disponibilidade de laboratórios.
 
 ● FUNCIONALIDADES PRINCIPAIS: 
 
@@ -57,9 +57,11 @@ O banco de dados do sistema é estruturado da seguinte forma:
 - date: Data do agendamento (STRING ou formato de data)
 
 - time: Horário do agendamento (STRING)
-Relacionamentos
-users possui uma relação de um-para-muitos com bookings (um professor pode fazer vários agendamentos).
-labs possui uma relação de um-para-muitos com bookings (um laboratório pode ser reservado várias vezes).
+  
+● RELACIONAMENTOS:
+- users possuem uma relação de um-para-muitos com bookings (um professor pode fazer vários agendamentos).
+
+- labs possuem uma relação de um-para-muitos com bookings (um laboratório pode ser reservado várias vezes).
 
 
 ● Rotas da API (CRUD Funcional)
@@ -69,13 +71,13 @@ A aplicação utiliza ExpressJS para implementar as seguintes rotas:
 POST /register: Criptografa a senha e cadastra os professores no sistema.
 
 - Login de Professora:
-POST /login: Autentica os professores registrada e retorna um token de sessão.
+POST /login: Autentica os professores registradps e retorna um token de sessão.
 
 - Listar Laboratórios:
 GET /labs: Exibe a lista de todos os laboratórios disponíveis para reserva.
 
 - Agendar Laboratório:
-POST /book: Permite que um professore reserve um laboratório para uma data e horário específicos.
+POST /book: Permite que um professor reserve um laboratório para uma data e horário específicos.
 
 - Listar Agendamentos:
 GET /bookings: Exibe os agendamentos de um laboratório em uma data específica.
