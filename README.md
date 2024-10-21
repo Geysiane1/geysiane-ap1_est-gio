@@ -1,6 +1,5 @@
-# Sistemas_de_Agendamento_de_Laboratórios
+# Sistemas de Agendamento de Laboratórios
 
-Sistema de Agendamento de Laboratórios
 Este projeto é uma aplicação web que permite professores agendarem laboratórios para suas atividades, gerenciar reservas e consultar a disponibilidade de laboratórios.
 
 ● FUNCIONALIDADES PRINCIPAIS: 
